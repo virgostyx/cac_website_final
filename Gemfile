@@ -63,6 +63,8 @@ group :development do
   gem 'capistrano-rails', '~>1.6'
   gem 'capistrano-rbenv', '~>2.2'
   gem 'capistrano3-puma'
+  gem 'ed25519'
+  gem 'bcrypt_pbkdf'
 end
 
 group :test do
