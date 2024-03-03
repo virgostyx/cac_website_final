@@ -12,7 +12,7 @@ gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", ">= 5.0"
+gem "puma", ">= 6.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -62,7 +62,7 @@ group :development do
   gem 'capistrano', '~>3.18'
   gem 'capistrano-rails', '~>1.6'
   gem 'capistrano-rbenv', '~>2.2'
-  gem 'capistrano3-puma', '~>5.2'
+  gem 'capistrano3-puma', '6.0.0.beta.1'
   gem 'ed25519'
   gem 'bcrypt_pbkdf'
 end
