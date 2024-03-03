@@ -62,7 +62,7 @@ group :development do
   gem 'capistrano', '~>3.18'
   gem 'capistrano-rails', '~>1.6'
   gem 'capistrano-rbenv', '~>2.2'
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma', '~>5.2'
   gem 'ed25519'
   gem 'bcrypt_pbkdf'
 end
