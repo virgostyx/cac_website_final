@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "153.92.223.45", user: "webmaster", roles: %w{app db web}
+server "153.92.223.45", user: "deployer", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
@@ -32,7 +32,10 @@ server "153.92.223.45", user: "webmaster", roles: %w{app db web}
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
+set :nginx_server_name, 'cac.management'
 
+set :environment, 'production'
+set :rails_env,   'production'
 
 # Custom SSH Options
 # ==================
