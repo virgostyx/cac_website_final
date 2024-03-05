@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3", ">= 7.1.3.2"
+gem "rails", ">= 7.1.3.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -59,10 +59,17 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  gem 'capistrano', '~>3.18'
-  gem 'capistrano-rails', '~>1.6'
-  gem 'capistrano-rbenv', '~>2.2'
-  gem 'capistrano3-puma', '6.0.0.beta.1'
+  gem 'capistrano', '~> 3.18', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano-nginx', require: false
+  gem 'capistrano3-puma', '6.0.0.beta.1', require: false
+  gem 'capistrano-rails', '~>1.6', require: false
+  gem 'capistrano-rails-db', require: false
+  gem 'capistrano-rails-console', require: false
+  gem 'capistrano-upload-config', require: false
+  gem 'sshkit-sudo', require: false
+  gem 'capistrano-figaro-yml', require: false
+
   gem 'ed25519'
   gem 'bcrypt_pbkdf'
 end
